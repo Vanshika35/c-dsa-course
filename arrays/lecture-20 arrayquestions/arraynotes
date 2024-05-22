@@ -1,0 +1,26 @@
+1) to add two array    2 ways
+we do 
+carry = sum/10;
+and 
+sum = sum % 10;
+
+2) for array to be sorted and rotated  2 ways
+ use modulo operator to find value
+
+ 3) remove duplicates from apply
+ use set for removing duplicates
+
+ 4) K groups main iterate karne keliye
+ void reverseInGroups(vector<long long>& arr, int n, int k){
+        int end = n-1;
+        int m = k;
+        for(int i = 0; i< n; i+=k){
+           int start = i;
+           int end = min(i + k - 1, n - 1); // this is the logic of the program
+            while(start < end){
+                swap(arr[start++], arr[end--]);
+                
+                }
+            }
+    }
+
